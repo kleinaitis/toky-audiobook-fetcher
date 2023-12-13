@@ -1,5 +1,6 @@
-from download import download_audiobook_data
-from scrape import get_audiobook_download_links
+import sys
 
-audiobook_links = get_audiobook_download_links("")
-download_audiobook_data(audiobook_links)
+from download import download_audiobook
+
+download_audiobook(sys.argv[1])
+
