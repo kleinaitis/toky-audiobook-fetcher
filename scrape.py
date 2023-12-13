@@ -6,6 +6,10 @@ import re
 links_array = []
 
 
+def get_audiobook_title(url):
+    return url.rsplit("/", 1)[1].replace('-', ' ').title()
+
+
 def get_audiobook_download_links(URL):
     global links_array
     URL = URL
