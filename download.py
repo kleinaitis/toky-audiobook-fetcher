@@ -48,7 +48,7 @@ def write_response_to_file(response, file_path):
         print(f"Error writing to file: {e}")
 
 
-def download_audiobook(audiobook_url, download_directory):
+def download_audiobook(audiobook_url):
     audiobook_title = get_audiobook_title(audiobook_url)
     download_links = extract_and_format_download_links(audiobook_url)
-    download_audiobook_data(download_links, audiobook_title, download_directory)
+    download_audiobook_data(download_links, audiobook_title)
