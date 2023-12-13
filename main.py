@@ -1,4 +1,5 @@
-from download import download_and_create_chapters
+from download import download_audiobook_data
 from scrape import get_audiobook_download_links
 
-download_and_create_chapters(get_audiobook_download_links("https://tokybook.com/the-book-of-dust-la-belle-sauvage"))
+audiobook_links = get_audiobook_download_links("")
+download_audiobook_data(audiobook_links)
