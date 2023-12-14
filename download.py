@@ -26,7 +26,7 @@ def download_audiobook_data(audiobook_links, audiobook_title):
     download_links = audiobook_links[1:]
 
     logging.basicConfig(level=logging.INFO)
-    with tqdm.tqdm(total=len(download_links), desc=f"Downloading {audiobook_title}", unit=" chapter") as progress_bar:
+    with tqdm.tqdm(total=len(download_links), desc=f"Downloading {audiobook_title}", unit="chapter") as progress_bar:
 
         for chapter_counter, download_link in enumerate(download_links, start=1):
             try:
