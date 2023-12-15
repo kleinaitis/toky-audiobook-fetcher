@@ -1,2 +1,7 @@
-.idea/
 __pycache__/
+.idea/
+
+# Distribution and build folders
+build/
+dist/
+*.egg-info/
