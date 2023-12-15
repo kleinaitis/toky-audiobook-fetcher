@@ -1,7 +1,7 @@
 __pycache__/
 .idea/
 
-# Distribution and build folders
+# Distribution and build artifacts
 build/
 dist/
 *.egg-info/
