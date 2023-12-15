@@ -3,7 +3,7 @@ import os
 
 import requests
 import tqdm
-from scrape import get_audiobook_title, extract_and_format_download_links
+from tokybook_audiobook_fetcher.scrape import get_audiobook_title, extract_and_format_download_links
 
 
 def create_audiobook_file(response, chapter_counter, audiobook_title):
