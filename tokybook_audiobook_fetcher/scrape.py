@@ -1,11 +1,16 @@
 import requests
 from bs4 import BeautifulSoup
-from urllib.parse import quote, urljoin
+from urllib.parse import quote, urljoin, urlparse
 import re
+import sys
 
 
 def get_audiobook_title(url):
-    return url.rsplit("/", 1)[1].replace('-', ' ').title()
+    domain_name = urlparse(url)
+    if domain_name.netloc == "tokybook.com":
+        return url.rsplit("/", 1)[1].replace('-', ' ').title()
+    else:
+        raise ValueError("Please enter a valid URL from tokybook.com.")
 
 
 def fetch_audiobook_script_content(audiobook_url):
